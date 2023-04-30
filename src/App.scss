@@ -1,0 +1,219 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.btn {
+  background-color: #774514;
+  color: #fff;
+  border: none;
+}
+
+.btn:hover,
+.btn:active,
+.btn-check:checked+.btn {
+  background-color: #9a6128 !important;
+}
+
+.btn:disabled {
+  background-color: #935210 !important;
+}
+
+.beer-config-button,
+.worker-button {
+  .btn {
+    font-size: x-large;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #b6a86a;
+}
+
+.headline {
+  text-align: center;
+
+  img {
+    height: 100px;
+  }
+}
+
+.toolbar {
+
+  .config-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .worker-button {
+    flex-grow: 1;
+
+    .btn {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .beer-config-button {
+    flex-grow: 1;
+
+    .btn {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .money-card {
+    padding: 20px;
+
+    .list-group-item {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .stat-balance {
+      font-size: larger;
+      font-weight: bolder;
+    }
+  }
+
+  .brew-progress-container {}
+
+  .brew-progress {
+    width: 100%;
+
+    .CircularProgressbar-path {
+      stroke: #fed643;
+    }
+
+    .CircularProgressbar-text {
+      font-size: 8px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      fill: #000;
+      font-weight: bolder;
+    }
+  }
+
+  .brew-progress-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .drunk-progress {
+    .progress {
+      height: 50px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.modal-dialog {
+  max-width: 920px;
+}
+
+.worker-selection-modal {
+  .modal-dialog {
+    width: 100%;
+  }
+}
+
+.beer-composition-selection {
+  .card {
+    height: 100%;
+    text-align: center;
+    min-width: 200px;
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-footer {
+      margin-top: auto;
+      background-color: transparent !important;
+
+    }
+
+    .locked {}
+  }
+}
+
+.selected-ingredients-card {
+  height: 100%;
+  text-align: center;
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-footer {
+    margin-top: auto;
+    background-color: transparent !important;
+
+  }
+}
+
+.action-container {
+  .brew-kettle-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .brew-kettle {
+      padding: 10px;
+      padding: 10px;
+
+      img {
+        width: 15vw;
+      }
+
+    }
+  }
+
+  .beer-truck-container {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.start-modal,
+.end-modal {
+  .modal-header {
+    justify-content: center;
+  }
+
+  .modal-dialog {
+    max-width: 720px;
+  }
+
+  .modal-header {
+    img {
+      max-width: 608px;
+    }
+  }
+
+  .modal-footer {
+    justify-content: center;
+  }
+}
